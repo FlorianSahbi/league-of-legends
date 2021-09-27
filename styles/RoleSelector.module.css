@@ -1,0 +1,22 @@
+.roleWrapper {
+  border-top: 1px solid rgb(193, 193, 193);
+  border-bottom: 1px solid rgb(193, 193, 193);
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  height: 45px;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.button {
+  padding: 12px;
+  border: 0px;
+  background-color: transparent;
+  color: rgb(186, 194, 204);
+}
+
+.button:hover {
+  color:blue;
+  cursor: pointer;
+}

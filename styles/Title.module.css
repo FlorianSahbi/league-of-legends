@@ -1,0 +1,68 @@
+.titleWrapper {
+  font-family: "Roboto", serif;
+  text-align: center;
+  padding: 1em;
+}
+
+.intro {
+  text-transform: uppercase;
+  font-style: italic;
+  line-height: 1.1;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.title {
+  text-transform: uppercase;
+  font-style: italic;
+  line-height: 1.1;
+  font-size: 60px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+}
+
+.description {
+  text-transform: initial;
+  font-style: initial;
+  line-height: 1.6;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
+.revealFromDownside {
+  animation-duration: 2800ms;
+  animation-delay: 100ms;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  clip-path: polygon(100% 100%, -200% 100%, 100% -200%);
+  animation-name: revealFromDownside;
+}
+
+.revealFromUpside {
+  animation-duration: 2000ms;
+  animation-delay: 0ms;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  clip-path: polygon(0% 0%, 200% 0%, 0% 200%);
+  animation-name: revealFromUpside;
+}
+
+@keyframes revealFromDownside {
+  0% {
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
+  }
+
+  100% {
+    clip-path: polygon(100% 100%, -200% 100%, 100% -200%);
+  }
+}
+
+@keyframes revealFromUpside {
+  0% {
+    clip-path: polygon(0% 0%, 0% 0%, 0% 0%);
+  }
+
+  100% {
+    clip-path: polygon(0% 0%, 200% 0%, 0% 200%);
+  }
+}

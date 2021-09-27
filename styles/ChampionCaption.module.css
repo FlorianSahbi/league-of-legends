@@ -1,0 +1,30 @@
+.championCaption {
+  position: absolute;
+  width: 100%;
+  margin: 0px;
+  opacity: 0;
+  transition: opacity 0.1s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.championCaptionName {
+  display: block;
+  text-transform: uppercase;
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+}
+
+.championCaptionTitle {
+  display: block;
+  text-transform: initial;
+  color: black;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+}
+
+.show {
+  opacity: 1;
+  transition-duration: 0.7s;
+}
